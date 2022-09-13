@@ -1,5 +1,6 @@
-package com.ytrue.middleware.whitelist.config;
+package com.ytrue.middleware.whitelist.properties;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @date 2022/9/11 21:18
  * @description WhiteListProperties
  */
+@Data
 @ConfigurationProperties("ytrue.whitelist")
 public class WhiteListProperties {
 
