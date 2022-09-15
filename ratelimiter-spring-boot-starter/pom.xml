@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ytrue.middleware</groupId>
-    <artifactId>hystrix-spring-boot-starter</artifactId>
+    <artifactId>ratelimiter-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hystrix-spring-boot-starter</name>
+    <name>ratelimiter-spring-boot-starter</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -20,7 +20,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -42,16 +41,15 @@
             <artifactId>lombok</artifactId>
         </dependency>
 
-        <!-- hystrix-core -->
-        <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-core</artifactId>
-            <version>1.5.9</version>
-        </dependency>
-
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.2-jre</version>
         </dependency>
 
         <dependency>
@@ -96,7 +94,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.ytrue.middleware.hystrixspringbootstarter.HystrixSpringBootStarterApplication
+                    <mainClass>
+                        com.ytrue.middleware.ratelimiterspringbootstarter.RatelimiterSpringBootStarterApplication
                     </mainClass>
                 </configuration>
                 <executions>

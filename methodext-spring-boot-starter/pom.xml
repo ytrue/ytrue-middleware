@@ -2,17 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.ytrue.middleware</groupId>
-    <artifactId>hystrix-spring-boot-starter</artifactId>
+    <groupId>com.ytrue.middeware</groupId>
+    <artifactId>methodext-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hystrix-spring-boot-starter</name>
+    <name>methodext-spring-boot-starter</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-boot.version>2.5.6</spring-boot.version>
+        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
     </properties>
 
     <dependencies>
@@ -20,7 +20,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,13 +39,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-        </dependency>
-
-        <!-- hystrix-core -->
-        <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-core</artifactId>
-            <version>1.5.9</version>
         </dependency>
 
         <dependency>
@@ -96,8 +88,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.ytrue.middleware.hystrixspringbootstarter.HystrixSpringBootStarterApplication
-                    </mainClass>
+                    <mainClass>com.ytrue.middeware.methodext.MethodextSpringBootStarterApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
