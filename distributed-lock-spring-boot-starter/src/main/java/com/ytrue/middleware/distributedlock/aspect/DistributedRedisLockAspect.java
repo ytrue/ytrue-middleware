@@ -1,7 +1,8 @@
-package com.ytrue.middleware.lock.aspect;
+package com.ytrue.middleware.distributedlock.aspect;
 
-import com.ytrue.middleware.lock.DistributedLockClient;
-import com.ytrue.middleware.lock.annotation.DistributedRedisLock;
+
+import com.ytrue.middleware.distributedlock.DistributedLockClient;
+import com.ytrue.middleware.distributedlock.annotation.DistributedRedisLock;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
@@ -36,7 +37,7 @@ public class DistributedRedisLockAspect {
             throw new RuntimeException("annotation DistributedRedisLock lockName is null！");
         }
 
-        com.ytrue.middleware.lock.DistributedRedisLock redisLock = this.distributedLockClient.getRedisLock(lockName);
+        com.ytrue.middleware.distributedlock.DistributedRedisLock redisLock = this.distributedLockClient.getRedisLock(lockName);
         redisLock.lock();
         try {
             return jp.proceed();

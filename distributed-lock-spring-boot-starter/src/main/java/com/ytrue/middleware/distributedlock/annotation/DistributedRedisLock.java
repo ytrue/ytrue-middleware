@@ -1,4 +1,4 @@
-package com.ytrue.middleware.lock.annotation;
+package com.ytrue.middleware.distributedlock.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

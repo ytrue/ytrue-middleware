@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ytrue.middleware</groupId>
-    <artifactId>lock-router-spring-boot-starter</artifactId>
+    <artifactId>distributed-lock-spring-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lock-router-spring-boot-starter</name>
+    <name>distributed-lock-spring-boot-starter</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -94,22 +94,6 @@
                     <target>1.8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.3.7.RELEASE</version>
-                <configuration>
-                    <mainClass>com.ytrue.middleware.lock.LockRouterSpringBootStarterApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>repackage</id>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>

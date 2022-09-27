@@ -1,4 +1,4 @@
-package com.ytrue.middleware.lock;
+package com.ytrue.middleware.distributedlock;
 
 import org.springframework.data.redis.core.StringRedisTemplate;
 

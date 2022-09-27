@@ -1,4 +1,4 @@
-package com.ytrue.middleware.lock;
+package com.ytrue.middleware.distributedlock;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.core.StringRedisTemplate;

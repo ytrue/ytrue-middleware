@@ -1,6 +1,7 @@
-package com.ytrue.middleware.lock;
+package com.ytrue.middleware.distributedlock;
 
-import com.ytrue.middleware.lock.aspect.DistributedRedisLockAspect;
+
+import com.ytrue.middleware.distributedlock.aspect.DistributedRedisLockAspect;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
